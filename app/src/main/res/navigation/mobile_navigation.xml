@@ -9,7 +9,17 @@
         android:id="@+id/nav_home"
         android:name="com.deepsingh44.homepage.ui.home.HomeFragment"
         android:label="@string/menu_home"
-        tools:layout="@layout/fragment_home"></fragment>
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_nav_home_to_nav_slideshow"
+            app:destination="@id/nav_slideshow" />
+        <action
+            android:id="@+id/action_nav_home_to_nav_profile"
+            app:destination="@id/nav_profile" />
+        <action
+            android:id="@+id/action_nav_home_to_nav_search"
+            app:destination="@id/nav_search" />
+    </fragment>
 
 
 
@@ -17,17 +27,23 @@
         android:id="@+id/nav_slideshow"
         android:name="com.deepsingh44.homepage.ui.slideshow.ListOfStudent"
         android:label="@string/menu_slideshow"
-        tools:layout="@layout/fragment_slideshow" />
+        tools:layout="@layout/fragment_slideshow" >
+
+    </fragment>
 
     <fragment
         android:id="@+id/nav_profile"
         android:name="com.deepsingh44.homepage.ui.profile.ProfileFragment"
         android:label="@string/menu_profile"
-        tools:layout="@layout/fragment_profile" />
+        tools:layout="@layout/fragment_profile" >
+
+    </fragment>
 
     <fragment
         android:id="@+id/nav_search"
         android:name="com.deepsingh44.homepage.ui.search.SearchFragment"
         android:label="@string/menu_search"
-        tools:layout="@layout/fragment_search" />
+        tools:layout="@layout/fragment_search" >
+
+    </fragment>
 </navigation>

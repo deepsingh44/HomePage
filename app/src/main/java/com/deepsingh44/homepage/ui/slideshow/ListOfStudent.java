@@ -30,6 +30,7 @@ public class ListOfStudent extends Fragment {
                 textView.setText(s);
             }
         });
+        getActivity().setTitle(R.string.menu_slideshow);
         return root;
     }
 }
